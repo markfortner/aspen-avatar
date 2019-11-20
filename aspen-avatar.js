@@ -6,7 +6,9 @@ import "@aspen-elements/aspen-icons/aspen-icons";
  * `aspen-avatar` This component displays a user's avatar, or a generic person icon
  *  if there isn't an avatar.
  *
- * @summary ShortDescription.
+ * @summary This component displays a user's avatar, or a generic person icon
+ *  if there isn't an avatar.
+ *
  * @customElement
  * @polymer
  * @extends {Polymer.Element}
@@ -78,7 +80,7 @@ class AspenAvatar extends PolymerElement {
 
   /**
    * A method to handle error while fetching the image
-   *
+   * @param {Event} e the event object
    */
   _handleImageError(e) {
     this.isImageAvailable = false;
@@ -86,7 +88,10 @@ class AspenAvatar extends PolymerElement {
 
   /**
    * A method that determines if the URL is null.
-   * @param url The URL for the image.
+   * @param {String} url The URL for the image.
+   * @param {Boolean} isImageAvailable a flag that 
+   *                  indicates whether or not the 
+   *                  avatar image is available
    */
   _computeUrlNull(url, isImageAvailable) {
     var isNull =
