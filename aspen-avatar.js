@@ -32,16 +32,15 @@ class AspenAvatar extends PolymerElement {
           margin-left: 3px;
         }
       </style>
-      <template>
-        <div class="avatar-container">
-          <template is="dom-if" if="{{isUrlNull}}">
-            <iron-icon icon="aspen:person"></iron-icon>
-          </template>
-          <template is="dom-if" if="{{!isUrlNull}}">
-            <img src="[[url]]" on-error="_handleImageError" />
-          </template>
-        </div>
-      </template>
+
+      <div class="avatar-container">
+        <template is="dom-if" if="{{isUrlNull}}">
+          <iron-icon icon="aspen:person"></iron-icon>
+        </template>
+        <template is="dom-if" if="{{!isUrlNull}}">
+          <img src="[[url]]" on-error="_handleImageError" />
+        </template>
+      </div>
     `;
   }
   /**

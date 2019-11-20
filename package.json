@@ -1,5 +1,5 @@
 {
-  "name": "aspen-avatar",
+  "name": "@aspen-elements/aspen-avatar",
   "main": "aspen-avatar.js",
   "dependencies": {
     "@polymer/polymer": "^3.0.0",
@@ -14,5 +14,29 @@
     "chai": "^4.2.0",
     "mocha": "^6.1.4",
     "wct-mocha": "^1.0.1"
-  }
+  },
+  "description": "This component displays a user's avatar, or a generic person icon",
+  "version": "0.5.0",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aspen-elements/aspen-avatar.git"
+  },
+  "keywords": [
+    "aspen-avatar",
+    "avatar",
+    "aspen",
+    "aspen-elements"
+  ],
+  "author": "Mark Fortner, Ishan Subedi",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/aspen-elements/aspen-avatar/issues"
+  },
+  "homepage": "https://github.com/aspen-elements/aspen-avatar#readme"
 }
